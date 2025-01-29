@@ -3,7 +3,8 @@ const appEl = document.getElementById("app");
 
 getNotes().forEach((note) => {          //As when we refresh the page the content will not delete  
   const noteEl = createNoteEl(note.id, note.content);  // creating the same content in the local storage 
-  appEl.insertBefore(noteEl, btnEl);     // Inserting the same data on web page which is created in the local storage 
+  appEl.insertBefore(noteEl, btnEl);       // Inserting the same data on web page which is created in the local storage 
+
 });
 
 function createNoteEl(id, content) {
